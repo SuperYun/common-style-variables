@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+$prefix: "pnt-" !default;
+
+// 主色
+$color-primary-0: #5086f3;
+$color-primary-1: #a9c4f9;
+$color-primary-2: #eff4fe;
+$color-primary-3: #f2f6fe;
+
+// 错误色
+$color-error-0: #ad352f;
+$color-error-1: #f6685d;
+$color-error-2: #ffb9b0;
+$color-error-3: #fff0ed;
+
+// 成功色
+$color-success-0: #008858;
+$color-success-1: #56c08d;
+$color-success-2: #c6f3d7;
+$color-success-3: #e3f9e9;
+
+// 警示色
+$color-warning-0: #be5a00;
+$color-warning-1: #fa9550;
+$color-warning-2: #ffd9c2;
+$color-warning-3: #fff1e9;
+
+$color-primary: $color-primary-0 !default; // 色彩-品牌-可操作
+$color-success: $color-success-0 !default; // 色彩-功能-成功
+$color-warning: $color-warning-0 !default; // 色彩-功能-警告
+$color-error: $color-error-0 !default; // 色彩-功能-失败
+
+// Font-width
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+// border
+$border-width: 1px !default;
+$border-color: #dcdcdc !default;
+
+// line
+$color-line: #dcdcdc !default;
+
+// text color
+$color-text-1: rgba(0, 0, 0, 0.9) !default;
+$color-text-2: rgba(0, 0, 0, 0.6) !default;
+$color-text-3: rgba(0, 0, 0, 0.4) !default;
+
+$color-text-title: $color-text-1 !default;
+$color-text-title-sub: $color-text-3 !default;
+$color-text-main: $color-text-2 !default;
+$color-text-disabled: #bbb !default;
+$color-text-primary: $color-primary !default;
+$color-text-success: $color-success !default;
+$color-text-error: $color-error !default;
+$color-text-warning: $color-warning !default;
+
+// Font-size
+$font-size-base: 12px !default;
+$font-size-m: 14px !default;
+$font-size-l: 16px !default;
+$font-size-xl: 18px !default;
+$font-size-xxl: 20px !default;
+$font-size-xxxl: 24px !default;
+$font-size-xxxxl: 36px !default;
+
+// 填充色
+$color-fill-1: $color-primary !default;
+$color-fill-2: #e7e7e7 !default;
+$color-fill-3: #f5f8ff !default;
+$color-fill-4: rgba(255, 255, 255, 0.901961);
+
+$page-bg-color: $color-fill-3; // 页面背景底色
+
+$cancle-bg-color: $color-fill-2; // 取消背景色
+
+$disabled-bg-color: $color-fill-4; // 置灰色
+
+// 间距
+$s-0: 30px !default;
+$s-1: 20px !default;
+$s-2: 18px !default;
+$s-3: 16px !default;
+$s-4: 14px !default;
+
+// 遮罩色
+$mask-color: rgba(0, 0, 0, 0.6) !default;
+
+// 主题色扩展
+$color-primary-hover: $color-primary !default;
+$color-primary-focus: $color-primary !default;
+$color-primary-active: $color-primary !default;
+
+// 警告色扩展
+$color-warning-hover: $color-warning !default;
+$color-warning-focus: $color-warning !default;
+$color-warning-active: $color-warning !default;
+
+// 失败/错误色扩展
+$color-error-hover: $color-error !default;
+$color-error-focus: $color-error !default;
+$color-error-active: $color-error !default;
+
+// 成功色扩展
+$color-success-hover: $color-success !default;
+$color-success-focus: $color-success !default;
+$color-success-active: $color-success !default;
+
+// Font-weight
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+// 阴影
+$box-shadow-s: 0 1px 1px 0 rgba(0, 0, 0, 0.15) !default;
+$box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15) !default;
+
+// 遮罩
+$mask-color: rgba(0, 0, 0, 0.8) !default;
+
+// 圆角
+$border-radius-s: 3px !default;
+$border-radius-m: 6px !default;
+
+// icon-color
+$icon-color-default: #888 !default;
+$icon-color-weight: #444 !default;
+$icon-color-primary: $color-primary !default;
+$icon-color-error: $color-error !default;
+$icon-color-warning: $color-warning !default;
+$icon-color-success: $color-success !default;

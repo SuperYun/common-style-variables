@@ -1,0 +1,182 @@
+@import "./index.scss";
+* {
+  box-sizing: border-box;
+}
+
+/* tea 覆盖样式 */
+
+.tea-layout__content {
+  background-color: $page-bg-color;
+}
+.tea-layout__content-footer {
+  height: 72px;
+  .account-footer {
+    min-height: 72px;
+    height: 72px;
+  }
+}
+.tea-card {
+  height: auto;
+  border-radius: $border-radius-m;
+  box-shadow: none;
+}
+.tea-card__body {
+  padding: $s-0;
+}
+.tea-layout__header-title .tea-h2 {
+  color: $color-text-title;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-xl;
+}
+.tea-card__title .tea-h3,
+.tea-card__title h3 {
+  color: $color-text-title;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-xl;
+}
+.tea-card__subtitle {
+  margin: 0;
+  color: $color-text-title-sub;
+  font-size: $font-size-base;
+  text-align: left;
+}
+.tea-btn--link {
+  color: $color-primary;
+  font-size: $font-size-base;
+}
+
+.tea-layout__content-header {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  height: 66px;
+  /* header 里的tab 左右边距 */
+  .tea-tabs {
+    padding: 0 $s-0;
+  }
+  .tea-layout__header-title {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    border: none;
+  }
+}
+/* 禁止头部和底部跟随滚动 */
+.tea-layout__content {
+  overflow: hidden;
+}
+/* 只有content-body超出部分滚动内容 */
+.tea-layout__content-body {
+  padding: $s-0;
+  overflow-y: auto !important;
+}
+/* keepalive 元素layout样式补充 */
+.ka-wrapper {
+  flex: 1 1;
+  height: 100%;
+  background-color: $page-bg-color;
+}
+.ka-content {
+  display: flex;
+  height: 100%;
+}
+
+.tea-dialog__inner {
+  width: 520px;
+  min-width: 520px;
+  padding: $s-0;
+  border-radius: $border-radius-m;
+}
+.tea-dialog__messagetext {
+  color: $color-text-2;
+  font-size: $font-size-m;
+  line-height: 22px;
+  text-align: left;
+}
+.tea-dialog__headertitle {
+  color: $color-text-title;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-l;
+  line-height: 24px;
+  text-align: left;
+  max-width: 95%;
+}
+// modal 确认弹窗样式覆盖
+.tea-dialog__body > .tea-media {
+  position: relative;
+  padding: 0;
+}
+.tea-dialog__body > .tea-media .tea-media__left {
+  position: unset;
+}
+.tea-dialog__btnwrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.tea-dialog__btnwrap > .tea-btn:first-child {
+  margin-right: 0;
+}
+.tea-input,
+.tea-textarea,
+.tea-btn,
+.account_tools-item .tea-dropdown-default {
+  border-radius: $border-radius-s;
+}
+.tea-table thead tr {
+  background-color: #fcfbfc;
+}
+.tea-table.tea-table--allbordered td,
+.tea-table.tea-table--allbordered th {
+  border-right: none;
+}
+.tea-table.tea-table--allbordered td:not(:last-child),
+.tea-table.tea-table--allbordered th:not(:last-child) {
+  border-right: 1px solid #e7eaef;
+}
+
+/* 表格字体 14px */
+.tea-table__box td > div,
+.tea-table__box th > div {
+  font-size: $font-size-base;
+}
+
+.tea-tabs,
+.tea-tabs__tabbar,
+.tea-tabs__scroll-area,
+.tea-tabs__tablist,
+.tea-tabs__tabitem {
+  height: inherit;
+}
+.tea-tabs__tab {
+  display: flex;
+  align-items: center;
+}
+.tea-inputnum.is-disabled .tea-inputnum__minus,
+.tea-inputnum.is-disabled .tea-inputnum__plus,
+.tea-inputnum__minus.is-disabled,
+.tea-inputnum__plus.is-disabled {
+  background-color: $disabled-bg-color;
+}
+.tea-input[disabled],
+.tea-input[disabled]:hover,
+.tea-textarea-group[disabled],
+.tea-textarea-group[disabled]:hover,
+.tea-textarea[disabled],
+.tea-textarea[disabled]:hover {
+  background-color: $disabled-bg-color;
+}
+.tea-segment .tea-btn.is-selected,
+.tea-segment .tea-btn.is-selected:hover {
+  color: $color-primary;
+  border-color: $color-primary;
+}
+.tea-tabs__tab.is-active:after,
+.tea-tabs__tab:hover:after {
+  border-bottom-color: $color-primary;
+}
+.tea-input[readonly="readonly"],
+.tea-input[readonly],
+.tea-textarea-group[readonly="readonly"],
+.tea-textarea-group[readonly],
+.tea-textarea[readonly="readonly"],
+.tea-textarea[readonly] {
+  background-color: $disabled-bg-color;
+}
