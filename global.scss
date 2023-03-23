@@ -9,11 +9,7 @@
   background-color: $page-bg-color;
 }
 .tea-layout__content-footer {
-  height: 72px;
-  .account-footer {
-    min-height: 72px;
-    height: 72px;
-  }
+  padding: 20px 30px;
 }
 .tea-card {
   height: auto;
@@ -26,13 +22,13 @@
 .tea-layout__header-title .tea-h2 {
   color: $color-text-title;
   font-weight: $font-weight-normal;
-  font-size: $font-size-xl;
+  font-size: $font-size-m;
 }
 .tea-card__title .tea-h3,
 .tea-card__title h3 {
   color: $color-text-title;
   font-weight: $font-weight-normal;
-  font-size: $font-size-xl;
+  font-size: $font-size-m;
 }
 .tea-card__subtitle {
   margin: 0;
@@ -47,7 +43,7 @@
 
 .tea-layout__content-header {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-  height: 66px;
+  height: 64px;
   /* header 里的tab 左右边距 */
   .tea-tabs {
     padding: 0 $s-0;
@@ -80,21 +76,19 @@
 }
 
 .tea-dialog__inner {
-  width: 520px;
-  min-width: 520px;
   padding: $s-0;
   border-radius: $border-radius-m;
 }
 .tea-dialog__messagetext {
   color: $color-text-2;
-  font-size: $font-size-m;
+  font-size: $font-size-base;
   line-height: 22px;
   text-align: left;
 }
 .tea-dialog__headertitle {
   color: $color-text-title;
   font-weight: $font-weight-bold;
-  font-size: $font-size-l;
+  font-size: $font-size-m;
   line-height: 24px;
   text-align: left;
   max-width: 95%;
@@ -120,23 +114,7 @@
 .account_tools-item .tea-dropdown-default {
   border-radius: $border-radius-s;
 }
-.tea-table thead tr {
-  background-color: #fcfbfc;
-}
-.tea-table.tea-table--allbordered td,
-.tea-table.tea-table--allbordered th {
-  border-right: none;
-}
-.tea-table.tea-table--allbordered td:not(:last-child),
-.tea-table.tea-table--allbordered th:not(:last-child) {
-  border-right: 1px solid #e7eaef;
-}
 
-/* 表格字体 14px */
-.tea-table__box td > div,
-.tea-table__box th > div {
-  font-size: $font-size-base;
-}
 
 .tea-tabs,
 .tea-tabs__tabbar,
