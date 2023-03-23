@@ -5,12 +5,6 @@
 
 /* tea 覆盖样式 */
 
-.tea-layout__content {
-  background-color: @page-bg-color;
-}
-.tea-layout__content-footer {
-  padding: 20px 30px;
-}
 .tea-card {
   height: auto;
   border-radius: @border-radius-m;
@@ -55,9 +49,12 @@
     border: none;
   }
 }
-/* 禁止头部和底部跟随滚动 */
 .tea-layout__content {
   overflow: hidden;
+  background-color: @page-bg-color;
+}
+.tea-layout__content-footer {
+  padding: 20px 30px;
 }
 /* 只有content-body超出部分滚动内容 */
 .tea-layout__content-body {
