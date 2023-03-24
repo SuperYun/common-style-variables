@@ -35,19 +35,18 @@
   font-size: $font-size-base;
 }
 
-.tea-layout__content-header {
-  height: 64px;
- 
-  .header-tab--wrap {
-    .tea-tabs {
-      background-color: #ffff;
-      height: 38px; /* header 里的tab 左右边距 */
-      .tea-tabs__tabbar {
-        padding: 0 $s-0;
-      }
+.header-tab--wrap {
+  .tea-tabs {
+    background-color: #ffff;
+    height: 38px; /* header 里的tab 左右边距 */
+    .tea-tabs__tabbar {
+      padding: 0 $s-0;
     }
   }
+}
 
+.tea-layout__content-header {
+  height: 64px;
   .tea-layout__header-title {
     display: flex;
     align-items: center;
@@ -114,6 +113,7 @@
 .tea-input,
 .tea-textarea,
 .tea-btn,
+.tea-dropdown-btn.tea-dropdown__header,
 .tea-dropdown-default {
   border-radius: $border-radius-s;
 }
