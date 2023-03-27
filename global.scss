@@ -91,10 +91,14 @@
   font-size: $font-size-m;
   line-height: 24px;
   text-align: left;
-  max-width: 95%;
+  max-width: 92%;
 }
 .tea-dialog__header {
-  margin-bottom: 24px;
+  margin-bottom: 9px;
+}
+.tea-dialog__header .tea-btn--icon {
+  top: -8px;
+  right: -8px;
 }
 // modal 确认弹窗样式覆盖
 .tea-dialog__body > .tea-media {
