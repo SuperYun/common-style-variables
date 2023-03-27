@@ -218,8 +218,9 @@
   border: none;
 }
 
-.tea-form .tea-form__label, .tea-region-pave__area-name i {
-  color: $color-text-title;
+.tea-form .tea-form__label,
+.tea-region-pave__area-name i {
+  color: $color-text-3;
 }
 
 .header-tab--wrap {
@@ -227,27 +228,40 @@
   background-color: #ffffff;
   /* header 里的tab 左右边距 */
   .tea-tabs__tabbar {
-    padding: 0 $s-0;
+    padding: 0 $s-1;
+    .tea-tabs__scroll-area {
+      .tea-tabs__tablist {
+        .tea-tabs__tabitem {
+          margin: 0;
+          .tea-tabs__tab {
+            padding: 8px 16px !important;
+          }
+        }
+      }
+    }
   }
 }
 
-.tea-btn--link{
+.tea-btn--link {
   padding: 0;
 }
 
-.tea-card+.tea-card{
+.tea-card + .tea-card {
   margin-top: 16px;
 }
-.tea-table__box td{
-  border-color: #E7E7E7;
+.tea-table__box td {
+  border-color: #e7e7e7;
 }
-.tea-table__box th>div {
+.tea-table__box th > div {
   color: $color-text-title-sub;
   font-weight: $font-weight-normal;
 }
+.tea-table td .tea-btn{
+  font-size: $font-size-base;
+}
 
 // 分页器样式覆盖
-.tea-table+.tea-pagination,
+.tea-table + .tea-pagination,
 .tea-pagination {
   padding: $s-3 24px;
   .tea-pagination__state {
