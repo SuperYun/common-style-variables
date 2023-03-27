@@ -86,6 +86,7 @@
   text-align: left;
 }
 .tea-dialog__headertitle {
+  display: flex;
   color: @color-text-title;
   font-weight: @font-weight-bold;
   font-size: @font-size-m;
@@ -111,6 +112,12 @@
 .tea-dialog__btnwrap {
   display: flex;
   justify-content: flex-end;
+}
+.tea-dialog__btnwrap > .tea-btn:not(:last-child) {
+  margin: 0 8px;
+}
+.tea-dialog__btnwrap > .tea-btn:last-child {
+  margin: 0;
 }
 .tea-dialog__btnwrap > .tea-btn:first-child:last-child {
   margin-right: 0;
@@ -261,7 +268,7 @@
   color: @color-text-title-sub;
   font-weight: @font-weight-normal;
 }
-.tea-table td .tea-btn{
+.tea-table td .tea-btn {
   font-size: @font-size-base;
 }
 
