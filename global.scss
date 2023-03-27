@@ -87,6 +87,7 @@
 }
 .tea-dialog__headertitle {
   display: flex;
+  margin-bottom: 0;
   color: $color-text-title;
   font-weight: $font-weight-bold;
   font-size: $font-size-m;
@@ -95,7 +96,7 @@
   max-width: 92%;
 }
 .tea-dialog__header {
-  margin-bottom: 9px;
+  margin-bottom: 15px;
 }
 .tea-dialog__header .tea-btn--icon {
   top: -8px;
