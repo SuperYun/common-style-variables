@@ -130,6 +130,9 @@
 .tea-dropdown-default {
   border-radius: @border-radius-s;
 }
+.tea-input-group>.tea-input:first-child, .tea-input-group>.tea-select:first-child{
+  border-radius: @border-radius-s;
+}
 
 .tea-input,
 .tea-textarea,
@@ -187,7 +190,7 @@
   background-color: @disabled-bg-color;
 }
 
-.tea-btn {
+.tea-btn:not(.tea-btn--link) {
   padding: 5px 16px;
   line-height: normal;
   font-size: @font-size-m;
