@@ -130,7 +130,8 @@
 .tea-dropdown-default {
   border-radius: @border-radius-s;
 }
-.tea-input-group>.tea-input:first-child, .tea-input-group>.tea-select:first-child{
+.tea-input-group > .tea-input:first-child,
+.tea-input-group > .tea-select:first-child {
   border-radius: @border-radius-s;
 }
 
@@ -190,7 +191,7 @@
   background-color: @disabled-bg-color;
 }
 
-.tea-btn:not(.tea-btn--link) {
+.tea-btn:not(.tea-btn--link, .tea-btn--text) {
   padding: 5px 16px;
   line-height: normal;
   font-size: @font-size-m;
@@ -348,4 +349,36 @@
       }
     }
   }
+}
+.tea-datepicker {
+  .tea-datepicker__input--range {
+    border-radius: @border-radius-s;
+    .tea-input {
+      text-align: center;
+    }
+  }
+}
+
+.tea-checkbox:checked,
+.tea-checkbox:checked:focus,
+.tea-checkbox:checked:hover,
+input[type="checkbox"]:checked,
+input[type="checkbox"]:checked:focus,
+input[type="checkbox"]:checked:hover,
+.tea-checkbox:indeterminate,
+input[type="checkbox"]:indeterminate {
+  background-color: @color-primary;
+}
+
+.tea-tag-input__inner,
+.tea-checkbox,
+input[type="checkbox"] {
+  border-radius: $border-radius-s;
+}
+
+.tea-form-title {
+  color: @color-text-title;
+  font-weight: @font-weight-normal;
+  font-size: @font-size-m;
+  margin-bottom: @s-2;
 }
