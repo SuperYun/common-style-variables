@@ -192,7 +192,7 @@
   background-color: @disabled-bg-color;
 }
 
-.tea-btn:not(.tea-btn--link, .tea-btn--text) {
+.tea-btn:not(.tea-btn--link, .tea-btn--text, .tea-btn--search) {
   padding: 5px 16px;
   line-height: normal;
   font-size: @font-size-m;
@@ -383,4 +383,17 @@ input[type="checkbox"] {
   font-weight: @font-weight-normal;
   font-size: @font-size-m;
   margin-bottom: @s-2;
+}
+
+.tea-search .tea-btn {
+  bottom: -2px;
+}
+
+.tea-list--option{
+  min-height: 44px;
+}
+
+.tea-radio:checked, input[type=radio]:checked{
+  background-color: #3F8CFF;
+  border: 1px solid #3F8CFF;
 }
